@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya — AI/ML Student & Developer</title>
+  <meta name="description" content="Learning in public. Building things that think. AI/ML student and full-stack developer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ── Header ──────────────────────────────────────────────────────────────── -->
+<header>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">ADI<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="learner.html">Learner</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="btn-hire">Hire Me</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </div>
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="projects.html">Projects</a>
+    <a href="learner.html">Learner</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn-hire">Hire Me</a>
+  </nav>
+</header>
+
+<!-- ── Main ────────────────────────────────────────────────────────────────── -->
+<main>
+  <div class="container">
+
+    <!-- Hero -->
+    <section class="hero">
+      <p class="eyebrow hero-eyebrow">AI / ML Student &amp; Developer</p>
+      <h1 class="hero-title">
+        Learning in public.<br>
+        Building things<br>
+        that <span class="highlight">think.</span>
+      </h1>
+      <p class="hero-sub">
+        I'm Aditya — an AI/ML student building real projects, documenting the journey, and shipping code that learns.
+      </p>
+      <div class="hero-actions">
+        <a href="projects.html" class="btn btn-primary">View Projects &#8599;</a>
+        <a href="about.html" class="btn btn-outline">About Me</a>
+      </div>
+    </section>
+
+    <!-- Big name -->
+    <div class="big-name" aria-hidden="true">
+      <span>A</span><span>D</span><span>I</span><span>T</span><span>Y</span><span>A</span>
+    </div>
+
+    <!-- Skills strip -->
+    <section class="fade-up">
+      <div class="section-label"><span>Skills</span></div>
+      <div class="skills-grid">
+        <div class="skill-col">
+          <h4>ML / AI</h4>
+          <ul>
+            <li>PyTorch</li>
+            <li>TensorFlow</li>
+            <li>Scikit-learn</li>
+            <li>HuggingFace</li>
+          </ul>
+        </div>
+        <div class="skill-col">
+          <h4>Data</h4>
+          <ul>
+            <li>NumPy / Pandas</li>
+            <li>Matplotlib</li>
+            <li>SQL</li>
+            <li>Kaggle</li>
+          </ul>
+        </div>
+        <div class="skill-col">
+          <h4>Dev</h4>
+          <ul>
+            <li>Python</li>
+            <li>React / Node</li>
+            <li>FastAPI</li>
+            <li>Docker</li>
+          </ul>
+        </div>
+        <div class="skill-col">
+          <h4>Currently Learning</h4>
+          <ul>
+            <li>Transformers</li>
+            <li>Diffusion Models</li>
+            <li>RL</li>
+            <li>MLOps / CUDA</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured projects bento -->
+    <section style="margin-top:5rem;" class="fade-up">
+      <div class="section-label"><span>Featured Projects</span></div>
+      <div class="grid-3">
+        <div class="card project-card">
+          <span class="status">Live</span>
+          <h3>Sentiment Analyser</h3>
+          <p>Fine-tuned BERT on 50k reviews. 94% accuracy on unseen data.</p>
+          <div class="project-tags">
+            <span class="tag">NLP</span><span class="tag">BERT</span><span class="tag">PyTorch</span>
+          </div>
+          <div class="project-actions">
+            <a href="projects.html">View all projects &#8599;</a>
+          </div>
+        </div>
+        <div class="card project-card">
+          <span class="status">Live</span>
+          <h3>Object Detection API</h3>
+          <p>Real-time YOLOv8 inference wrapped in a FastAPI service.</p>
+          <div class="project-tags">
+            <span class="tag">CV</span><span class="tag">YOLO</span><span class="tag">FastAPI</span>
+          </div>
+          <div class="project-actions">
+            <a href="projects.html">View all projects &#8599;</a>
+          </div>
+        </div>
+        <div class="card project-card">
+          <span class="status">In Progress</span>
+          <h3>RAG Chatbot</h3>
+          <p>LLM + vector DB retrieval over custom documents with streaming.</p>
+          <div class="project-tags">
+            <span class="tag">LLM</span><span class="tag">RAG</span><span class="tag">LangChain</span>
+          </div>
+          <div class="project-actions">
+            <a href="projects.html">View all projects &#8599;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta-banner fade-up">
+      <div>
+        <h2>Open to internships &amp; collaborations</h2>
+        <p>If you're building something interesting in AI/ML, I'd love to hear about it.</p>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Get in touch &#8599;</a>
+    </div>
+
+  </div>
+</main>
+
+<!-- ── Footer ───────────────────────────────────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <p>© 2026 Aditya. Built with HTML, CSS &amp; JS.</p>
+      <ul class="footer-links">
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="learner.html">Learner</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

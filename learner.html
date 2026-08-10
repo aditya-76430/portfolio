@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learner — Aditya | AI/ML Notes & Videos</title>
+  <meta name="description" content="My personal AI/ML video library — organised by topic. Learning in public." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">ADI<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="learner.html">Learner</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="btn-hire">Hire Me</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </div>
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="projects.html">Projects</a>
+    <a href="learner.html">Learner</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn-hire">Hire Me</a>
+  </nav>
+</header>
+
+<main>
+  <div class="container">
+
+    <!-- Header -->
+    <div style="margin-bottom:3.5rem;">
+      <p class="eyebrow" style="margin-bottom:1rem;">Learning in public</p>
+      <h1 style="font-size:clamp(3rem,8vw,7rem);margin-bottom:1rem;">Learner</h1>
+      <p style="color:var(--muted-fg);max-width:520px;line-height:1.7;">
+        My personal AI/ML video library — organised by topic. Click a folder to browse videos, each linking to the full recording on Google Drive.
+      </p>
+      <div style="display:flex;align-items:center;gap:1.5rem;margin-top:1.5rem;">
+        <span style="font-family:monospace;font-size:0.75rem;color:var(--muted-fg);">
+          <span style="color:var(--fg);font-weight:600;">3</span> folders
+        </span>
+        <span style="width:1px;height:16px;background:var(--border);display:inline-block;"></span>
+        <span style="font-family:monospace;font-size:0.75rem;color:var(--muted-fg);">
+          <span style="color:var(--fg);font-weight:600;">7</span> videos
+        </span>
+      </div>
+    </div>
+
+    <!-- Folder grid -->
+    <div class="grid-3">
+
+      <a href="learner-python-for-ml.html" class="folder-card fade-up" style="--accent:#b8ff57;">
+        <div>
+          <div class="folder-icon" style="background:rgba(184,255,87,0.1);">
+            <span style="color:#b8ff57;">📁</span>
+          </div>
+          <h2>Python for ML</h2>
+          <p>Core Python concepts every ML practitioner needs — NumPy, Pandas, and beyond.</p>
+        </div>
+        <div class="folder-footer">
+          <span>3 videos</span>
+          <span style="color:var(--muted-fg);">→</span>
+        </div>
+      </a>
+
+      <a href="learner-deep-learning.html" class="folder-card fade-up" style="--accent:#9e57ff;">
+        <div>
+          <div class="folder-icon" style="background:rgba(158,87,255,0.1);">
+            <span style="color:#9e57ff;">📁</span>
+          </div>
+          <h2>Deep Learning</h2>
+          <p>Neural networks from scratch — forward pass, backprop, CNNs, and PyTorch.</p>
+        </div>
+        <div class="folder-footer">
+          <span>2 videos</span>
+          <span style="color:var(--muted-fg);">→</span>
+        </div>
+      </a>
+
+      <a href="learner-nlp.html" class="folder-card fade-up" style="--accent:#64ff57;">
+        <div>
+          <div class="folder-icon" style="background:rgba(100,255,87,0.1);">
+            <span style="color:#64ff57;">📁</span>
+          </div>
+          <h2>NLP</h2>
+          <p>Text processing, embeddings, transformers, and fine-tuning language models.</p>
+        </div>
+        <div class="folder-footer">
+          <span>2 videos</span>
+          <span style="color:var(--muted-fg);">→</span>
+        </div>
+      </a>
+
+      <!-- Add folder placeholder -->
+      <div class="folder-add fade-up">
+        <span style="font-size:1.5rem;color:var(--muted-fg);">📁</span>
+        <p>Add a new folder by creating a new<br><code>learner-FOLDERNAME.html</code><br>file and linking it here.</p>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <p>© 2026 Aditya. Built with HTML, CSS &amp; JS.</p>
+      <ul class="footer-links">
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="learner.html">Learner</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<style>
+.folder-card:hover { border-color: var(--accent, var(--primary)); }
+.folder-card:hover h2 { color: var(--accent, var(--primary)); }
+</style>
+</body>
+</html>

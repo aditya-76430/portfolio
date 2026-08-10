@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Aditya | AI/ML Developer</title>
+  <meta name="description" content="AI/ML projects by Aditya — NLP, Computer Vision, LLMs, Generative AI, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">ADI<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="learner.html">Learner</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="btn-hire">Hire Me</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </div>
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="projects.html">Projects</a>
+    <a href="learner.html">Learner</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn-hire">Hire Me</a>
+  </nav>
+</header>
+
+<main>
+  <div class="container">
+
+    <!-- Page header -->
+    <div style="margin-bottom:3rem;">
+      <p class="eyebrow" style="margin-bottom:1rem;">Portfolio</p>
+      <h1 style="font-size:clamp(3rem,8vw,7rem);margin-bottom:1rem;">Projects</h1>
+      <p style="color:var(--muted-fg);max-width:520px;line-height:1.7;">
+        Real AI/ML projects — from research experiments to deployed APIs. All code is open source.
+      </p>
+    </div>
+
+    <!-- Filter bar -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nlp">NLP</button>
+      <button class="filter-btn" data-filter="cv">Computer Vision</button>
+      <button class="filter-btn" data-filter="data">Data Science</button>
+      <button class="filter-btn" data-filter="llm">LLM / RAG</button>
+      <button class="filter-btn" data-filter="gen">Generative AI</button>
+      <button class="filter-btn" data-filter="rl">Reinforcement Learning</button>
+    </div>
+
+    <!-- Projects grid -->
+    <div class="grid-3">
+
+      <div class="card">
+        <div class="project-card" data-category="nlp">
+          <span class="status">Live</span>
+          <h3>Sentiment Analyser</h3>
+          <p>Fine-tuned BERT on 50k Amazon reviews. Achieved 94% accuracy on unseen test data with custom tokenisation pipeline.</p>
+          <div class="project-tags">
+            <span class="tag">NLP</span><span class="tag">BERT</span><span class="tag">PyTorch</span><span class="tag">HuggingFace</span>
+          </div>
+          <div class="project-actions">
+            <a href="#">Live Demo</a>
+            <a href="#">GitHub</a>
+            <a href="#">Download</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="project-card" data-category="cv">
+          <span class="status">Live</span>
+          <h3>Object Detection API</h3>
+          <p>Real-time YOLOv8 inference wrapped in a FastAPI service. Supports webcam streams and image uploads with bounding box output.</p>
+          <div class="project-tags">
+            <span class="tag">CV</span><span class="tag">YOLOv8</span><span class="tag">FastAPI</span><span class="tag">OpenCV</span>
+          </div>
+          <div class="project-actions">
+            <a href="#">Live Demo</a>
+            <a href="#">GitHub</a>
+            <a href="#">Download</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="project-card" data-category="data">
+          <span class="status">Live</span>
+          <h3>House Price Predictor</h3>
+          <p>End-to-end regression pipeline on the Kaggle housing dataset. Feature engineering, XGBoost, and a Streamlit dashboard.</p>
+          <div class="project-tags">
+            <span class="tag">Data Science</span><span class="tag">XGBoost</span><span class="tag">Streamlit</span>
+          </div>
+          <div class="project-actions">
+            <a href="#">Live Demo</a>
+            <a href="#">GitHub</a>
+            <a href="#">Download</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="project-card" data-category="llm">
+          <span class="status">In Progress</span>
+          <h3>RAG Chatbot</h3>
+          <p>LLM + FAISS vector retrieval over custom PDF documents. Streaming responses via LangChain and a React frontend.</p>
+          <div class="project-tags">
+            <span class="tag">LLM</span><span class="tag">RAG</span><span class="tag">LangChain</span><span class="tag">FAISS</span>
+          </div>
+          <div class="project-actions">
+            <a href="#">GitHub</a>
+            <a href="#">Download</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="project-card" data-category="gen">
+          <span class="status">Live</span>
+          <h3>Stable Diffusion Finetuner</h3>
+          <p>DreamBooth fine-tuning pipeline for personalised image generation. Runs on a single A100 in under 20 minutes.</p>
+          <div class="project-tags">
+            <span class="tag">Generative AI</span><span class="tag">Diffusion</span><span class="tag">DreamBooth</span>
+          </div>
+          <div class="project-actions">
+            <a href="#">Live Demo</a>
+            <a href="#">GitHub</a>
+            <a href="#">Download</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="project-card" data-category="rl">
+          <span class="status">In Progress</span>
+          <h3>RL Game Agent</h3>
+          <p>PPO agent trained to play Atari Breakout from raw pixels using Stable-Baselines3 and a custom reward shaping scheme.</p>
+          <div class="project-tags">
+            <span class="tag">RL</span><span class="tag">PPO</span><span class="tag">Atari</span><span class="tag">Gym</span>
+          </div>
+          <div class="project-actions">
+            <a href="#">GitHub</a>
+            <a href="#">Download</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Coming soon banner -->
+    <div style="border:1px dashed var(--border);padding:2rem;text-align:center;margin-top:3rem;" class="fade-up">
+      <p class="eyebrow" style="margin-bottom:0.5rem;">Coming Soon</p>
+      <p style="color:var(--muted-fg);font-size:0.875rem;">More projects in progress — check back soon or watch the GitHub.</p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <p>© 2026 Aditya. Built with HTML, CSS &amp; JS.</p>
+      <ul class="footer-links">
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="learner.html">Learner</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

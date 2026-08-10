@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Aditya | AI/ML Student</title>
+  <meta name="description" content="Get in touch with Aditya for collaborations, internships, research, or just to talk AI/ML." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">ADI<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="learner.html">Learner</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="btn-hire">Hire Me</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </div>
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="projects.html">Projects</a>
+    <a href="learner.html">Learner</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn-hire">Hire Me</a>
+  </nav>
+</header>
+
+<main>
+  <div class="container">
+
+    <!-- Hero -->
+    <div style="margin-bottom:3.5rem;">
+      <p class="eyebrow" style="margin-bottom:1rem;">Contact</p>
+      <h1 style="font-size:clamp(3rem,8vw,7rem);margin-bottom:1rem;">Let's talk.</h1>
+      <p style="color:var(--muted-fg);max-width:500px;line-height:1.7;">
+        Whether it's a collaboration, internship, research idea, or just a question about a project — I'm always happy to hear from you.
+      </p>
+    </div>
+
+    <!-- Two-column layout -->
+    <div style="display:grid;grid-template-columns:3fr 2fr;gap:4rem;" class="contact-grid">
+
+      <!-- Form -->
+      <div>
+        <!-- Success state (hidden by default) -->
+        <div id="form-success" class="form-success" style="display:none;">
+          <div style="font-size:2rem;">✓</div>
+          <h3>Message sent.</h3>
+          <p>Thanks for reaching out — I'll get back to you as soon as I can.</p>
+          <button id="reset-form" class="reset-btn">Send another message →</button>
+        </div>
+
+        <!-- Error box -->
+        <div id="form-error" class="form-error" style="display:none;"></div>
+
+        <!-- Form -->
+        <form id="contact-form" novalidate>
+          <!-- Honeypot -->
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"
+            style="position:absolute;left:-9999px;" aria-hidden="true" />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name_field">Name</label>
+              <input type="text" id="name_field" name="name_field" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>What's this about?</label>
+            <div class="chip-group">
+              <button type="button" class="chip">Collaboration</button>
+              <button type="button" class="chip">Internship / Job</button>
+              <button type="button" class="chip">Research</button>
+              <button type="button" class="chip">Project question</button>
+              <button type="button" class="chip">Just saying hi</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me what's on your mind..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">&#9658; Send message</button>
+        </form>
+      </div>
+
+      <!-- Sidebar links -->
+      <div>
+        <p style="font-family:monospace;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted-fg);margin-bottom:1.25rem;">Find me online</p>
+
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <div>
+            <div class="cl-label">GitHub</div>
+            <div class="cl-handle">@aditya</div>
+          </div>
+          <span>&#8599;</span>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <div>
+            <div class="cl-label">LinkedIn</div>
+            <div class="cl-handle">in/aditya</div>
+          </div>
+          <span>&#8599;</span>
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <div>
+            <div class="cl-label">Twitter / X</div>
+            <div class="cl-handle">@aditya_ml</div>
+          </div>
+          <span>&#8599;</span>
+        </a>
+        <a href="mailto:aditya@example.com" class="contact-link">
+          <div>
+            <div class="cl-label">Email</div>
+            <div class="cl-handle">aditya@example.com</div>
+          </div>
+          <span>&#8599;</span>
+        </a>
+
+        <div style="border:1px dashed var(--border);padding:1.25rem;margin-top:2rem;">
+          <p style="font-family:monospace;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--primary);margin-bottom:0.5rem;">Response time</p>
+          <p style="font-size:0.875rem;color:var(--muted-fg);line-height:1.6;">I typically reply within 24–48 hours. For urgent matters, email is fastest.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <p>© 2026 Aditya. Built with HTML, CSS &amp; JS.</p>
+      <ul class="footer-links">
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="learner.html">Learner</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<style>
+@media (max-width: 768px) {
+  .contact-grid { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
+}
+</style>
+</body>
+</html>
