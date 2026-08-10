@@ -280,7 +280,7 @@ main { padding-top: 96px; padding-bottom: 6rem; }
   font-size: clamp(5rem, 18vw, 16rem);
   letter-spacing: -0.05em;
   line-height: 0.85;
-  color: yellow;
+  color: rgb(235, 235, 74);
   -webkit-text-stroke: 1px var(--border);
   user-select: none;
   overflow: hidden;
