@@ -243,11 +243,113 @@ footer {
 main { padding-top: 96px; padding-bottom: 6rem; }
 
 /* ── Grid helpers ─────────────────────────────────────────────────────────── */
+/* Repository Grid */
+
 .grid-3 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.25rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
 }
+
+/* Repository Card */
+
+.repo-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: #111111;
+    border: 1px solid #2b2b2b;
+    transition: transform 0.2s ease,
+                border-color 0.2s ease;
+}
+
+.repo-card:hover {
+    transform: translateY(-4px);
+    border-color: #64ff57;
+}
+
+/* Repository Icon */
+
+.repo-icon {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1a1a1a;
+    color: #64ff57;
+}
+
+/* SVG image icons */
+.repo-icon img,
+.repo-icon svg {
+    width: 88px;
+    height: 88px;
+    object-fit: contain;
+}
+
+/* Icon hover effect */
+.repo-card:hover .repo-icon img,
+.repo-card:hover .repo-icon svg {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+/* Repository Details */
+
+.repo-body {
+    padding: 24px;
+}
+
+.repo-body h3 {
+    margin: 0 0 12px;
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.repo-body p {
+    color: var(--muted-fg, #999999);
+    font-size: 13px;
+    line-height: 1.7;
+    min-height: 65px;
+}
+
+/* Technology Tags */
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 18px;
+}
+
+.tag {
+    padding: 7px 10px;
+    background: #1a1a1a;
+    border: 1px solid #303030;
+    color: #aaaaaa;
+    font-family: monospace;
+    font-size: 11px;
+}
+
+/* Repository Link */
+
+.repo-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    padding-top: 15px;
+    border-top: 1px solid #303030;
+    color: #64ff57;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.repo-link span {
+    font-size: 18px;
+}
+
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
